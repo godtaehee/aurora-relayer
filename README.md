@@ -18,6 +18,26 @@ instances deployed on the NEAR Protocol.
 
 ## Usage
 
+### Change Default Network
+
+```bash
+export NEAR_ENV=mainnet
+```
+
+
+### Usage for Mainnet
+
+```bash
+NEAR_ENV=mainnet docker-compose up
+```
+
+
+#### Background Execute in Docker
+
+```bash
+NEAR_ENV=testnet docker-compose up -d
+```
+
 ### Usage for Testnet
 
 To run the relayer locally, execute:
@@ -86,6 +106,12 @@ If you're using the [NEAR CLI], you will find your signing keys stored as JSON
 key files under your `$HOME/.near-credentials/` directory.
 
 [NEAR CLI]: https://docs.near.org/docs/tools/near-cli
+
+We can make JSON file using NEAR-CLI
+
+```bash
+near login --acountId <Account Id>
+```
 
 ## Status
 
